@@ -8,7 +8,5 @@ setup(
     packages=find_packages(),
     url='https://github.com/coreylynch/pyFM',
     cmdclass = {'build_ext': build_ext},
-    ext_modules = [Extension("pyfm_fast", ["pyfm_fast.pyx"],
-    						 libraries=["m"],
-    						 include_dirs=[numpy.get_include()])]
+    ext_modules = [Extension("pyfm_fast", ["pyfm_fast.pyx"], include_dirs=[numpy.get_include()])]
 )
